@@ -16,10 +16,11 @@ namespace Postgres230221
         {
             this.m_conn = m_conn;
         }
-        /*
-    private static List<Movie> PrintAllMovies(string conn_string)
+
+        public List<Movie> GetAllMovies()
         {
-            using (var conn = new NpgsqlConnection(conn_string))
+            List<Movie> movies = new List<Movie>();
+            using (var conn = new NpgsqlConnection(m_conn))
             {
                 conn.Open();
                 string query = "SELECT * FROM movies";
@@ -30,14 +31,19 @@ namespace Postgres230221
                 var reader = command.ExecuteReader();
                 while (reader.Read())
                 {
-                    long id = (long)reader["id"];
-                    string title = (string)reader["title"];
-                    // ....
-                    Console.WriteLine($"{id} {title}");
+                    movies.Add(
+                        new Movie
+                        {
+                            Id = (long)reader["id"],
+                            Title = (string)reader["title"],
+                            ReleaseDate = (DateTime)reader["release_date"],
+                            Price = (double)reader["price"],
+                            CountryId = (long)reader["country_id"]
+                        });
                 }
             }
+            return movies;
         }
-        */
 
         public bool TestDbConnection()
         {

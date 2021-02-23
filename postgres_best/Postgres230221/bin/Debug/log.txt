@@ -1,0 +1,153 @@
+2021-02-23 18:56:42,365 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 18:56:42,401 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 18:56:42,682 FATAL Postgres230221.PostgresDAO - Testing db access. Failed!. Error: Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at Npgsql.NpgsqlConnector.<<ReadMessage>g__ReadMessageLong|194_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Npgsql.NpgsqlConnector.<AuthenticateSASL>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnector.<Authenticate>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Npgsql.NpgsqlConnector.<Open>d__175.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.ConnectorPool.<OpenNewConnector>d__41.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.ConnectorPool.<>c__DisplayClass38_0.<<Rent>g__RentAsync|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnection.<>c__DisplayClass41_0.<<Open>g__OpenAsync|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnection.Open()
+   at Postgres230221.PostgresDAO.TestDbConnection() in C:\Users\User\source\repos\Postgres230221\Postgres230221\PostgresDAO.cs:line 27
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\libpq\auth.c
+    Line: 334
+    Routine: auth_failed
+2021-02-23 18:56:42,688 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 18:57:13,636 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 18:57:13,673 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 18:57:13,933 FATAL Postgres230221.PostgresDAO - Testing db access. Failed!. Error: Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres"
+   at Npgsql.NpgsqlConnector.<<ReadMessage>g__ReadMessageLong|194_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Npgsql.NpgsqlConnector.<AuthenticateSASL>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnector.<Authenticate>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Npgsql.NpgsqlConnector.<Open>d__175.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.ConnectorPool.<OpenNewConnector>d__41.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.ConnectorPool.<>c__DisplayClass38_0.<<Rent>g__RentAsync|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnection.<>c__DisplayClass41_0.<<Open>g__OpenAsync|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnection.Open()
+   at Postgres230221.PostgresDAO.TestDbConnection() in C:\Users\User\source\repos\Postgres230221\Postgres230221\PostgresDAO.cs:line 27
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres"
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\libpq\auth.c
+    Line: 334
+    Routine: auth_failed
+2021-02-23 18:57:13,934 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 18:57:52,015 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 18:57:52,056 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 18:57:52,899 DEBUG Postgres230221.PostgresDAO - Testing db access. succeed!
+2021-02-23 18:57:52,906 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 19:49:50,633 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 19:49:50,662 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 19:49:51,552 DEBUG Postgres230221.PostgresDAO - Testing db access. succeed!
+2021-02-23 19:49:51,856 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 20:22:59,639 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 20:22:59,661 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 20:23:00,531 DEBUG Postgres230221.PostgresDAO - Testing db access. succeed!
+2021-02-23 20:23:00,680 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 20:23:20,404 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 20:23:20,440 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 20:23:20,714 FATAL Postgres230221.PostgresDAO - Testing db access. Failed!. Error: Npgsql.PostgresException (0x80004005): 28P01: password authentication failed for user "postgres1"
+   at Npgsql.NpgsqlConnector.<<ReadMessage>g__ReadMessageLong|194_0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Threading.Tasks.ValueTask`1.get_Result()
+   at Npgsql.NpgsqlConnector.<AuthenticateSASL>d__2.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnector.<Authenticate>d__0.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.ValidateEnd(Task task)
+   at Npgsql.NpgsqlConnector.<Open>d__175.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.ConnectorPool.<OpenNewConnector>d__41.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.ConnectorPool.<>c__DisplayClass38_0.<<Rent>g__RentAsync|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnection.<>c__DisplayClass41_0.<<Open>g__OpenAsync|0>d.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Npgsql.NpgsqlConnection.Open()
+   at Postgres230221.PostgresDAO.TestDbConnection() in C:\Users\User\source\repos\Postgres230221\Postgres230221\PostgresDAO.cs:line 55
+  Exception data:
+    Severity: FATAL
+    SqlState: 28P01
+    MessageText: password authentication failed for user "postgres1"
+    File: d:\pginstaller_13.auto\postgres.windows-x64\src\backend\libpq\auth.c
+    Line: 334
+    Routine: auth_failed
+2021-02-23 20:23:20,715 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 20:23:38,038 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 20:23:38,062 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 20:23:38,808 DEBUG Postgres230221.PostgresDAO - Testing db access. succeed!
+2021-02-23 20:23:38,921 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 20:24:41,810 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 20:24:41,836 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 20:24:42,592 DEBUG Postgres230221.PostgresDAO - Testing db access. succeed!
+2021-02-23 20:24:42,704 INFO  Postgres230221.Program - **************************** System shutdown
+2021-02-23 20:25:05,927 INFO  Postgres230221.Program - **************************** System started
+2021-02-23 20:25:05,966 DEBUG Postgres230221.PostgresDAO - Testing db access
+2021-02-23 20:25:06,730 DEBUG Postgres230221.PostgresDAO - Testing db access. succeed!
+2021-02-23 20:25:06,846 INFO  Postgres230221.Program - **************************** System shutdown

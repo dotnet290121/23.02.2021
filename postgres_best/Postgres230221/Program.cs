@@ -13,17 +13,26 @@ namespace Postgres230221
         
         static void Main(string[] args)
         {
+            if (args.Length == 1)
+            {
+                PostgresAppConfig.Instance.Init(args[0]);
+            }
+            else
+            {
+                PostgresAppConfig.Instance.Init();
+            }
 
             my_logger.Info("**************************** System started");
 
-            string conn_string = "Host=localhost;Username=postgres;Password=admin;Database=postgres;";
+            string conn_string = PostgresAppConfig.Instance.ConnectionString; //"Host=localhost;Username=postgres;Password=admin;Database=postgres;";
             IDataAccess dao = new PostgresDAO(conn_string);
 
             if (dao.TestDbConnection())
             {
                 Console.WriteLine("Successfully connected to the DB...");
 
-                // Here
+                var movies = dao.GetAllMovies();
+                movies.ForEach(m => Console.WriteLine(m));
 
             }
             else
@@ -32,6 +41,8 @@ namespace Postgres230221
             }
 
             my_logger.Info("**************************** System shutdown");
+
+            Console.ReadLine();
         }
     }
 }

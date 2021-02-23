@@ -10,6 +10,6 @@ namespace Postgres230221
     {
         bool TestDbConnection();
 
-        // add
+        List<Movie> GetAllMovies();
     }
 }
